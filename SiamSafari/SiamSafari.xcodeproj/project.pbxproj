@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		515F15D72BDE558C007E3930 /* SiamSafariApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F15D62BDE558C007E3930 /* SiamSafariApp.swift */; };
+		515F15D92BDE558C007E3930 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F15D82BDE558C007E3930 /* ContentView.swift */; };
+		515F15DB2BDE558C007E3930 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F15DA2BDE558C007E3930 /* Item.swift */; };
+		515F15DD2BDE558D007E3930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515F15DC2BDE558D007E3930 /* Assets.xcassets */; };
+		515F15E02BDE558D007E3930 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515F15DF2BDE558D007E3930 /* Preview Assets.xcassets */; };
+		515F15EA2BDE558D007E3930 /* SiamSafariTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F15E92BDE558D007E3930 /* SiamSafariTests.swift */; };
+		515F15F42BDE558D007E3930 /* SiamSafariUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F15F32BDE558D007E3930 /* SiamSafariUITests.swift */; };
+		515F15F62BDE558D007E3930 /* SiamSafariUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F15F52BDE558D007E3930 /* SiamSafariUITestsLaunchTests.swift */; };
+		515F16042BDE57CB007E3930 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 515F16032BDE57CB007E3930 /* MapKit.framework */; };
+		515F16062BDE5DDF007E3930 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F16052BDE5DDF007E3930 /* MapView.swift */; };
+		515F16082BDE5E01007E3930 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F16072BDE5E01007E3930 /* AddView.swift */; };
+		515F160A2BDE5E1B007E3930 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F16092BDE5E1B007E3930 /* SettingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		515F15E62BDE558D007E3930 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 515F15CB2BDE558C007E3930 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 515F15D22BDE558C007E3930;
+			remoteInfo = SiamSafari;
+		};
+		515F15F02BDE558D007E3930 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 515F15CB2BDE558C007E3930 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 515F15D22BDE558C007E3930;
+			remoteInfo = SiamSafari;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		515F15D32BDE558C007E3930 /* SiamSafari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiamSafari.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		515F15D62BDE558C007E3930 /* SiamSafariApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiamSafariApp.swift; sourceTree = "<group>"; };
+		515F15D82BDE558C007E3930 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		515F15DA2BDE558C007E3930 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		515F15DC2BDE558D007E3930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		515F15DF2BDE558D007E3930 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		515F15E52BDE558D007E3930 /* SiamSafariTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiamSafariTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		515F15E92BDE558D007E3930 /* SiamSafariTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiamSafariTests.swift; sourceTree = "<group>"; };
+		515F15EF2BDE558D007E3930 /* SiamSafariUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiamSafariUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		515F15F32BDE558D007E3930 /* SiamSafariUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiamSafariUITests.swift; sourceTree = "<group>"; };
+		515F15F52BDE558D007E3930 /* SiamSafariUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiamSafariUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		515F16032BDE57CB007E3930 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		515F16052BDE5DDF007E3930 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		515F16072BDE5E01007E3930 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		515F16092BDE5E1B007E3930 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		515F15D02BDE558C007E3930 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				515F16042BDE57CB007E3930 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		515F15E22BDE558D007E3930 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		515F15EC2BDE558D007E3930 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		515F15CA2BDE558C007E3930 = {
+			isa = PBXGroup;
+			children = (
+				515F15D52BDE558C007E3930 /* SiamSafari */,
+				515F15E82BDE558D007E3930 /* SiamSafariTests */,
+				515F15F22BDE558D007E3930 /* SiamSafariUITests */,
+				515F15D42BDE558C007E3930 /* Products */,
+				515F16022BDE57CB007E3930 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		515F15D42BDE558C007E3930 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				515F15D32BDE558C007E3930 /* SiamSafari.app */,
+				515F15E52BDE558D007E3930 /* SiamSafariTests.xctest */,
+				515F15EF2BDE558D007E3930 /* SiamSafariUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		515F15D52BDE558C007E3930 /* SiamSafari */ = {
+			isa = PBXGroup;
+			children = (
+				515F15D62BDE558C007E3930 /* SiamSafariApp.swift */,
+				515F15D82BDE558C007E3930 /* ContentView.swift */,
+				515F15DA2BDE558C007E3930 /* Item.swift */,
+				515F15DC2BDE558D007E3930 /* Assets.xcassets */,
+				515F15DE2BDE558D007E3930 /* Preview Content */,
+				515F16052BDE5DDF007E3930 /* MapView.swift */,
+				515F16072BDE5E01007E3930 /* AddView.swift */,
+				515F16092BDE5E1B007E3930 /* SettingView.swift */,
+			);
+			path = SiamSafari;
+			sourceTree = "<group>";
+		};
+		515F15DE2BDE558D007E3930 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				515F15DF2BDE558D007E3930 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		515F15E82BDE558D007E3930 /* SiamSafariTests */ = {
+			isa = PBXGroup;
+			children = (
+				515F15E92BDE558D007E3930 /* SiamSafariTests.swift */,
+			);
+			path = SiamSafariTests;
+			sourceTree = "<group>";
+		};
+		515F15F22BDE558D007E3930 /* SiamSafariUITests */ = {
+			isa = PBXGroup;
+			children = (
+				515F15F32BDE558D007E3930 /* SiamSafariUITests.swift */,
+				515F15F52BDE558D007E3930 /* SiamSafariUITestsLaunchTests.swift */,
+			);
+			path = SiamSafariUITests;
+			sourceTree = "<group>";
+		};
+		515F16022BDE57CB007E3930 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				515F16032BDE57CB007E3930 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		515F15D22BDE558C007E3930 /* SiamSafari */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 515F15F92BDE558D007E3930 /* Build configuration list for PBXNativeTarget "SiamSafari" */;
+			buildPhases = (
+				515F15CF2BDE558C007E3930 /* Sources */,
+				515F15D02BDE558C007E3930 /* Frameworks */,
+				515F15D12BDE558C007E3930 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiamSafari;
+			productName = SiamSafari;
+			productReference = 515F15D32BDE558C007E3930 /* SiamSafari.app */;
+			productType = "com.apple.product-type.application";
+		};
+		515F15E42BDE558D007E3930 /* SiamSafariTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 515F15FC2BDE558D007E3930 /* Build configuration list for PBXNativeTarget "SiamSafariTests" */;
+			buildPhases = (
+				515F15E12BDE558D007E3930 /* Sources */,
+				515F15E22BDE558D007E3930 /* Frameworks */,
+				515F15E32BDE558D007E3930 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				515F15E72BDE558D007E3930 /* PBXTargetDependency */,
+			);
+			name = SiamSafariTests;
+			productName = SiamSafariTests;
+			productReference = 515F15E52BDE558D007E3930 /* SiamSafariTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		515F15EE2BDE558D007E3930 /* SiamSafariUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 515F15FF2BDE558D007E3930 /* Build configuration list for PBXNativeTarget "SiamSafariUITests" */;
+			buildPhases = (
+				515F15EB2BDE558D007E3930 /* Sources */,
+				515F15EC2BDE558D007E3930 /* Frameworks */,
+				515F15ED2BDE558D007E3930 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				515F15F12BDE558D007E3930 /* PBXTargetDependency */,
+			);
+			name = SiamSafariUITests;
+			productName = SiamSafariUITests;
+			productReference = 515F15EF2BDE558D007E3930 /* SiamSafariUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		515F15CB2BDE558C007E3930 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					515F15D22BDE558C007E3930 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					515F15E42BDE558D007E3930 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 515F15D22BDE558C007E3930;
+					};
+					515F15EE2BDE558D007E3930 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 515F15D22BDE558C007E3930;
+					};
+				};
+			};
+			buildConfigurationList = 515F15CE2BDE558C007E3930 /* Build configuration list for PBXProject "SiamSafari" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 515F15CA2BDE558C007E3930;
+			productRefGroup = 515F15D42BDE558C007E3930 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				515F15D22BDE558C007E3930 /* SiamSafari */,
+				515F15E42BDE558D007E3930 /* SiamSafariTests */,
+				515F15EE2BDE558D007E3930 /* SiamSafariUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		515F15D12BDE558C007E3930 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				515F15E02BDE558D007E3930 /* Preview Assets.xcassets in Resources */,
+				515F15DD2BDE558D007E3930 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		515F15E32BDE558D007E3930 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		515F15ED2BDE558D007E3930 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		515F15CF2BDE558C007E3930 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				515F15D92BDE558C007E3930 /* ContentView.swift in Sources */,
+				515F16062BDE5DDF007E3930 /* MapView.swift in Sources */,
+				515F16082BDE5E01007E3930 /* AddView.swift in Sources */,
+				515F160A2BDE5E1B007E3930 /* SettingView.swift in Sources */,
+				515F15DB2BDE558C007E3930 /* Item.swift in Sources */,
+				515F15D72BDE558C007E3930 /* SiamSafariApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		515F15E12BDE558D007E3930 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				515F15EA2BDE558D007E3930 /* SiamSafariTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		515F15EB2BDE558D007E3930 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				515F15F62BDE558D007E3930 /* SiamSafariUITestsLaunchTests.swift in Sources */,
+				515F15F42BDE558D007E3930 /* SiamSafariUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		515F15E72BDE558D007E3930 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 515F15D22BDE558C007E3930 /* SiamSafari */;
+			targetProxy = 515F15E62BDE558D007E3930 /* PBXContainerItemProxy */;
+		};
+		515F15F12BDE558D007E3930 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 515F15D22BDE558C007E3930 /* SiamSafari */;
+			targetProxy = 515F15F02BDE558D007E3930 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		515F15F72BDE558D007E3930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		515F15F82BDE558D007E3930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		515F15FA2BDE558D007E3930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SiamSafari/Preview Content\"";
+				DEVELOPMENT_TEAM = 96D6LQ3Y54;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siit.SiamSafari;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		515F15FB2BDE558D007E3930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SiamSafari/Preview Content\"";
+				DEVELOPMENT_TEAM = 96D6LQ3Y54;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siit.SiamSafari;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		515F15FD2BDE558D007E3930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96D6LQ3Y54;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siit.SiamSafariTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SiamSafari.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SiamSafari";
+			};
+			name = Debug;
+		};
+		515F15FE2BDE558D007E3930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96D6LQ3Y54;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siit.SiamSafariTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SiamSafari.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SiamSafari";
+			};
+			name = Release;
+		};
+		515F16002BDE558D007E3930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96D6LQ3Y54;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siit.SiamSafariUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SiamSafari;
+			};
+			name = Debug;
+		};
+		515F16012BDE558D007E3930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96D6LQ3Y54;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siit.SiamSafariUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SiamSafari;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		515F15CE2BDE558C007E3930 /* Build configuration list for PBXProject "SiamSafari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				515F15F72BDE558D007E3930 /* Debug */,
+				515F15F82BDE558D007E3930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		515F15F92BDE558D007E3930 /* Build configuration list for PBXNativeTarget "SiamSafari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				515F15FA2BDE558D007E3930 /* Debug */,
+				515F15FB2BDE558D007E3930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		515F15FC2BDE558D007E3930 /* Build configuration list for PBXNativeTarget "SiamSafariTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				515F15FD2BDE558D007E3930 /* Debug */,
+				515F15FE2BDE558D007E3930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		515F15FF2BDE558D007E3930 /* Build configuration list for PBXNativeTarget "SiamSafariUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				515F16002BDE558D007E3930 /* Debug */,
+				515F16012BDE558D007E3930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 515F15CB2BDE558C007E3930 /* Project object */;
+}
