@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5116B2A42BE0FEBC00878B5F /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5116B2A32BE0FEBC00878B5F /* PersistenceController.swift */; };
 		515F15D72BDE558C007E3930 /* SiamSafariApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F15D62BDE558C007E3930 /* SiamSafariApp.swift */; };
 		515F15D92BDE558C007E3930 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F15D82BDE558C007E3930 /* ContentView.swift */; };
 		515F15DD2BDE558D007E3930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515F15DC2BDE558D007E3930 /* Assets.xcassets */; };
@@ -18,6 +19,8 @@
 		515F16062BDE5DDF007E3930 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F16052BDE5DDF007E3930 /* MapView.swift */; };
 		515F16082BDE5E01007E3930 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F16072BDE5E01007E3930 /* AddView.swift */; };
 		515F160A2BDE5E1B007E3930 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F16092BDE5E1B007E3930 /* SettingView.swift */; };
+		515F160D2BE0EDF7007E3930 /* LocationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F160C2BE0EDF7007E3930 /* LocationPicker.swift */; };
+		515F16102BE0F600007E3930 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 515F160E2BE0F600007E3930 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5116B2A32BE0FEBC00878B5F /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		515F15D32BDE558C007E3930 /* SiamSafari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiamSafari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		515F15D62BDE558C007E3930 /* SiamSafariApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiamSafariApp.swift; sourceTree = "<group>"; };
 		515F15D82BDE558C007E3930 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,7 +56,9 @@
 		515F16052BDE5DDF007E3930 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		515F16072BDE5E01007E3930 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		515F16092BDE5E1B007E3930 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		515F160B2BE0CCBA007E3930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		515F160C2BE0EDF7007E3930 /* LocationPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPicker.swift; sourceTree = "<group>"; };
+		515F160F2BE0F600007E3930 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		515F16132BE0FBF9007E3930 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../../../../.Trash/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,7 @@
 		515F15CA2BDE558C007E3930 = {
 			isa = PBXGroup;
 			children = (
+				515F160E2BE0F600007E3930 /* Model.xcdatamodeld */,
 				515F15D52BDE558C007E3930 /* SiamSafari */,
 				515F15E82BDE558D007E3930 /* SiamSafariTests */,
 				515F15F22BDE558D007E3930 /* SiamSafariUITests */,
@@ -105,7 +112,8 @@
 		515F15D52BDE558C007E3930 /* SiamSafari */ = {
 			isa = PBXGroup;
 			children = (
-				515F160B2BE0CCBA007E3930 /* Info.plist */,
+				515F16132BE0FBF9007E3930 /* Info.plist */,
+				515F160C2BE0EDF7007E3930 /* LocationPicker.swift */,
 				515F15D62BDE558C007E3930 /* SiamSafariApp.swift */,
 				515F15D82BDE558C007E3930 /* ContentView.swift */,
 				515F15DC2BDE558D007E3930 /* Assets.xcassets */,
@@ -113,6 +121,7 @@
 				515F16052BDE5DDF007E3930 /* MapView.swift */,
 				515F16072BDE5E01007E3930 /* AddView.swift */,
 				515F16092BDE5E1B007E3930 /* SettingView.swift */,
+				5116B2A32BE0FEBC00878B5F /* PersistenceController.swift */,
 			);
 			path = SiamSafari;
 			sourceTree = "<group>";
@@ -282,9 +291,12 @@
 			files = (
 				515F15D92BDE558C007E3930 /* ContentView.swift in Sources */,
 				515F16062BDE5DDF007E3930 /* MapView.swift in Sources */,
+				515F160D2BE0EDF7007E3930 /* LocationPicker.swift in Sources */,
+				515F16102BE0F600007E3930 /* Model.xcdatamodeld in Sources */,
 				515F16082BDE5E01007E3930 /* AddView.swift in Sources */,
 				515F160A2BDE5E1B007E3930 /* SettingView.swift in Sources */,
 				515F15D72BDE558C007E3930 /* SiamSafariApp.swift in Sources */,
+				5116B2A42BE0FEBC00878B5F /* PersistenceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,6 +630,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		515F160E2BE0F600007E3930 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				515F160F2BE0F600007E3930 /* Model.xcdatamodel */,
+			);
+			currentVersion = 515F160F2BE0F600007E3930 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = "/Users/arnaud/Delivery/side_project/Siam-Safari/SiamSafari/Model.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 515F15CB2BDE558C007E3930 /* Project object */;
 }

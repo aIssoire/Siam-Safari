@@ -76,6 +76,6 @@ final class ContentViewModel: NSObject, ObservableObject, CLLocationManagerDeleg
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MapView()
     }
 }

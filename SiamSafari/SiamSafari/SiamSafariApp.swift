@@ -1,18 +1,14 @@
-//
-//  SiamSafariApp.swift
-//  SiamSafari
-//
-//  Created by Arnaud Issoire on 28/04/2024.
-//
-
 import SwiftUI
-import SwiftData
+import CoreData
 
 @main
 struct SiamSafariApp: App {
+    let persistenceController = PersistenceController.shared
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

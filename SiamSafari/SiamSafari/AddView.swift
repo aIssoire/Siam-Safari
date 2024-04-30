@@ -1,11 +1,36 @@
 import SwiftUI
+import PhotosUI
+import CoreData
+
 
 struct AddView: View {
+    @Environment(\.managedObjectContext) private var managedObjectContext  // Injecte le contexte
     @State private var title: String = ""
     @State private var description: String = ""
     @State private var selection: String = "Trash Bin"
     @State private var showingImagePicker = false
+    @State private var showingLocationPicker = false
+    @State private var selectedLocation: CLLocationCoordinate2D?
     @State private var images: [UIImage] = []
+    
+    func savePin(context: NSManagedObjectContext) {
+        let newPin = Pin(context: context)
+        newPin.id = UUID()
+        newPin.ptitle = title
+        newPin.pdescription = description
+        newPin.ptype = selection
+        if let location = selectedLocation {
+            newPin.platitude = location.latitude
+            newPin.plongitude = location.longitude
+        }
+        
+        do {
+            try context.save()
+            print("Pin saved.")
+        } catch {
+            print("Failed to save pin: \(error)")
+        }
+    }
 
     var body: some View {
         NavigationView {
@@ -24,18 +49,18 @@ struct AddView: View {
                 }
                 
                 Section {
-                    Button(action: {
-                        // Add logic to choose location on the map here
-                    }) {
-                        Text("Choose a location on the map")
+                    Button("Choose a location on the map") {
+                        showingLocationPicker = true
+                    }
+                    
+                    if let location = selectedLocation {
+                        Text("Location: \(location.latitude), \(location.longitude)")
                     }
                 }
 
                 Section {
-                    Button(action: {
-                        self.showingImagePicker = true
-                    }) {
-                        Text("Add Photos")
+                    Button("Add Photos") {
+                        showingImagePicker = true
                     }
 
                     if !images.isEmpty {
@@ -68,17 +93,22 @@ struct AddView: View {
                 }
             }
             .navigationBarTitle("Add a Pin")
-        }
-        .sheet(isPresented: $showingImagePicker) {
-            ImagePicker(images: $images)
+                        .navigationBarItems(trailing: Button(action: {
+                            savePin(context: managedObjectContext)
+                        }) {
+                            Image(systemName: "plus.circle")
+                            Text("Save")
+                        })
+            .sheet(isPresented: $showingImagePicker) {
+                ImagePicker(images: $images)
+            }
+            .fullScreenCover(isPresented: $showingLocationPicker) {
+                LocationPickerView(selectedLocation: $selectedLocation)
+            }
         }
     }
 }
 
-
-
-import PhotosUI
-import SwiftUI
 
 struct ImagePicker: UIViewControllerRepresentable {
     @Environment(\.presentationMode) var presentationMode
@@ -121,5 +151,12 @@ struct ImagePicker: UIViewControllerRepresentable {
                 }
             }
         }
+    }
+}
+
+
+struct AddView_Previews: PreviewProvider {
+    static var previews: some View {
+        AddView()
     }
 }
