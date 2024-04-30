@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		515F15D72BDE558C007E3930 /* SiamSafariApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F15D62BDE558C007E3930 /* SiamSafariApp.swift */; };
 		515F15D92BDE558C007E3930 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F15D82BDE558C007E3930 /* ContentView.swift */; };
-		515F15DB2BDE558C007E3930 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F15DA2BDE558C007E3930 /* Item.swift */; };
 		515F15DD2BDE558D007E3930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515F15DC2BDE558D007E3930 /* Assets.xcassets */; };
 		515F15E02BDE558D007E3930 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515F15DF2BDE558D007E3930 /* Preview Assets.xcassets */; };
 		515F15EA2BDE558D007E3930 /* SiamSafariTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F15E92BDE558D007E3930 /* SiamSafariTests.swift */; };
@@ -42,7 +41,6 @@
 		515F15D32BDE558C007E3930 /* SiamSafari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiamSafari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		515F15D62BDE558C007E3930 /* SiamSafariApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiamSafariApp.swift; sourceTree = "<group>"; };
 		515F15D82BDE558C007E3930 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		515F15DA2BDE558C007E3930 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		515F15DC2BDE558D007E3930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		515F15DF2BDE558D007E3930 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		515F15E52BDE558D007E3930 /* SiamSafariTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiamSafariTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +52,7 @@
 		515F16052BDE5DDF007E3930 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		515F16072BDE5E01007E3930 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		515F16092BDE5E1B007E3930 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		515F160B2BE0CCBA007E3930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +105,9 @@
 		515F15D52BDE558C007E3930 /* SiamSafari */ = {
 			isa = PBXGroup;
 			children = (
+				515F160B2BE0CCBA007E3930 /* Info.plist */,
 				515F15D62BDE558C007E3930 /* SiamSafariApp.swift */,
 				515F15D82BDE558C007E3930 /* ContentView.swift */,
-				515F15DA2BDE558C007E3930 /* Item.swift */,
 				515F15DC2BDE558D007E3930 /* Assets.xcassets */,
 				515F15DE2BDE558D007E3930 /* Preview Content */,
 				515F16052BDE5DDF007E3930 /* MapView.swift */,
@@ -285,7 +284,6 @@
 				515F16062BDE5DDF007E3930 /* MapView.swift in Sources */,
 				515F16082BDE5E01007E3930 /* AddView.swift in Sources */,
 				515F160A2BDE5E1B007E3930 /* SettingView.swift in Sources */,
-				515F15DB2BDE558C007E3930 /* Item.swift in Sources */,
 				515F15D72BDE558C007E3930 /* SiamSafariApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +451,8 @@
 				DEVELOPMENT_TEAM = 96D6LQ3Y54;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SiamSafari/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We want to acces your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -482,6 +482,8 @@
 				DEVELOPMENT_TEAM = 96D6LQ3Y54;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SiamSafari/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We want to acces your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
